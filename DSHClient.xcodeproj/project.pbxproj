@@ -100,7 +100,7 @@
 			children = (
 				9E8B29BE566F4B1DFF06FDA9,
 			);
-			path = DSHClient/App;
+			path = App;
 			sourceTree = "<group>";
 		};
 		2BE3CF03ACA5F1E690D21A64 /* Models */ = {
@@ -108,7 +108,7 @@
 			children = (
 				1A05ECCDAA42D8A0DE9FE110,
 			);
-			path = DSHClient/Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4EB58A85E5678B78AD81080D /* Resources */ = {
@@ -117,7 +117,7 @@
 				B348253BF0495A00A6BE78DD,
 				D0F1788833144C3E97D8F1C8,
 			);
-			path = DSHClient/Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D8531B9E8D746CC2CFE0C520 /* Services */ = {
@@ -128,7 +128,7 @@
 				33F061DA9C4376220975E12E,
 				5511D876C3A6B424B3E4BCB2,
 			);
-			path = DSHClient/Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		5083B03145ED6D2A1F132D4A /* Stores */ = {
@@ -138,7 +138,7 @@
 				721C8E494AFD51F8704C27FC,
 				5DC0C594B6F755C26120470C,
 			);
-			path = DSHClient/Stores;
+			path = Stores;
 			sourceTree = "<group>";
 		};
 		2739BAE72FBBEA395CF58A82 /* Support */ = {
@@ -147,7 +147,7 @@
 				81F1693C75FEBC9072AB78B3,
 				8F814BC18341E47C1C634831,
 			);
-			path = DSHClient/Support;
+			path = Support;
 			sourceTree = "<group>";
 		};
 		D91F78411D6945065957482E /* Views */ = {
@@ -161,7 +161,7 @@
 				71032C5508764D065497782B,
 				0A22CB8956AFF2B0840BB764,
 			);
-			path = DSHClient/Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F53A670A04E9D156113BA446 /* Components */ = {
@@ -174,7 +174,7 @@
 				43AECA4B913EA5838C37BAC0,
 				59B9B6A4186F8D946EA04420,
 			);
-			path = DSHClient/Views/Components;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		2F3A6B1E78F896718625FF06 /* Products */ = {
@@ -289,7 +289,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = gnu++20;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -333,7 +333,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = -Onone;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -343,7 +343,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = gnu++20;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -370,7 +370,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf-with-dsym;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -380,7 +380,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = -O;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -393,11 +393,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = DSHClient/Resources/Info.plist;
+				INFOPLIST_FILE = "DSHClient/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					@executable_path/Frameworks,
+					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dsh.ios.client;
@@ -415,11 +415,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = DSHClient/Resources/Info.plist;
+				INFOPLIST_FILE = "DSHClient/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					@executable_path/Frameworks,
+					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dsh.ios.client;
