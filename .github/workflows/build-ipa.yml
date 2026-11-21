@@ -1,0 +1,30 @@
+name: Build unsigned IPA
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+    tags: ["v*"]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - run: xcodebuild -version
+      - name: Build
+        run: |
+          xcodebuild -project DSHClient.xcodeproj -scheme DSHClient \
+            -configuration Release -sdk iphoneos \
+            -destination 'generic/platform=iOS' -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" build
+      - name: Package
+        run: |
+          mkdir -p Payload
+          cp -R build/Build/Products/Release-iphoneos/DSHClient.app Payload/
+          zip -qry DSHClient.ipa Payload
+      - uses: actions/upload-artifact@v4
+        with:
+          name: DSHClient-ipa
+          path: DSHClient.ipa
