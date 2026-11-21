@@ -1,0 +1,11 @@
+{
+  "name": "dsh-swiftcheck",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Optional syntax check for the Swift sources (tree-sitter WASM).",
+  "dependencies": {
+    "tree-sitter-wasms": "^0.1.13",
+    "web-tree-sitter": "0.25.6"
+  }
+}

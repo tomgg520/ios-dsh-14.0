@@ -1,0 +1,12 @@
+{
+  "port": 8787,
+  "host": "0.0.0.0",
+  "token": "ABCD-2345",
+  "autoApprove": false,
+  "workspaces": [],
+  "defaultCwd": "",
+  "dsh": {
+    "command": [],
+    "env": {}
+  }
+}
